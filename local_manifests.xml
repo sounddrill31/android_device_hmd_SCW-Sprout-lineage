@@ -2,4 +2,6 @@
 <manifest>
   <remote name="sounddrill31" fetch="https://github.com/sounddrill31"/>
   <project path="device/hmd/SCW_sprout" name="android_device_hmd_SCW-Sprout-lineage" revision="lineage-20" remote="sounddrill31"/>
+  <project path="vendor/hmd/SCW_sprout" name="android_vendor_hmd_SCW-Sprout-lineage" revision="lineage-20" remote="sounddrill31"/>
+  <project path="kernel/hmd/SCW_sprout" name="android_kernel_hmd_SCW-sprout" revision="kernel" remote="sounddrill31"/>
 </manifest>
