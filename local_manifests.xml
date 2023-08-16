@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="sounddrill31" fetch="https://github.com/sounddrill31"/>
+  <remote name="vendor" fetch="https://gitlab.com/sounddrill311/nokia"/>
+  <project path="device/hmd/SCW_sprout" name="android_device_hmd_SCW-Sprout-lineage" revision="lineage-20" remote="sounddrill31"/>
+  <project path="vendor/hmd/SCW_sprout" name="android_vendor_SCW-sprout" revision="new" remote="vendor"/>
+  <project path="kernel/hmd/SCW_sprout" name="android_kernel_hmd_SCW-sprout" revision="kernel" remote="sounddrill31"/>
+</manifest>
