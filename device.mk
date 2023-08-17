@@ -111,4 +111,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/hmd/SCW_sprout/SCW_sprout-vendor.mk)
+$(call inherit-product, vendor/hmd/SCWsprout/SCWsprout-vendor.mk)
