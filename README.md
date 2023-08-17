@@ -1,4 +1,4 @@
-# Android device tree for Nokia Nokia X10 (SCW_sprout)
+# Android device tree for Nokia Nokia X10 (SCWsprout)
 
 ```
 #
