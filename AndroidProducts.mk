@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_SCW_sprout.mk
+    $(LOCAL_DIR)/lineage_SCWsprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_SCW_sprout-user \
-    lineage_SCW_sprout-userdebug \
-    lineage_SCW_sprout-eng
+    lineage_SCWsprout-user \
+    lineage_SCWsprout-userdebug \
+    lineage_SCWsprout-eng
