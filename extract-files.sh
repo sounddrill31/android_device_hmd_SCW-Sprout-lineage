@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=SCW_sprout
+DEVICE=SCWsprout
 VENDOR=hmd
 
 # Load extract_utils and do some sanity checks
