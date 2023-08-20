@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_SCW_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_SCW_sprout-user \
-    twrp_SCW_sprout-userdebug \
-    twrp_SCW_sprout-eng
+    twrp-SCW_sprout-user \
+    twrp-SCW_sprout-userdebug \
+    twrp-SCW_sprout-eng
