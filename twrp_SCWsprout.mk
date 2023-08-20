@@ -16,7 +16,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/hmd/SCW_sprout/device.mk)
 
 PRODUCT_DEVICE := SCW_sprout
-PRODUCT_NAME := omni_SCW_sprout
+PRODUCT_NAME := twrp_SCWsprout
 PRODUCT_BRAND := Nokia
 PRODUCT_MODEL := Nokia X10
 PRODUCT_MANUFACTURER := hmd
