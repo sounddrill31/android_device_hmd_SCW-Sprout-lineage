@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_SCW_sprout.mk
+    $(LOCAL_DIR)/twrp_SCWsprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_SCW_sprout-user \
-    twrp_SCW_sprout-userdebug \
-    twrp_SCW_sprout-eng
+    twrp_SCWsprout-user \
+    twrp_SCWsprout-userdebug \
+    twrp_SCWsprout-eng
