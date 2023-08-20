@@ -50,7 +50,7 @@ TARGET_KERNEL_CONFIG := SCW_sprout_defconfig
 TARGET_KERNEL_SOURCE := kernel/hmd/SCW_sprout
 
 # Kernel - prebuilt
-TARGET_FORCE_PREBUILT_KERNEL := false # made it false to allow custom kernel
+TARGET_FORCE_PREBUILT_KERNEL := true # made it false to allow custom kernel
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
@@ -97,4 +97,17 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
-include vendor/hmd/SCW_sprout/BoardConfigVendor.mk
+# include vendor/hmd/SCW_sprout/BoardConfigVendor.mk
+
+# Hack: prevent anti rollback
+PLATFORM_SECURITY_PATCH := 2099-12-31
+VENDOR_SECURITY_PATCH := 2099-12-31
+PLATFORM_VERSION := 16.1.0
+
+# TWRP Configuration
+TW_THEME := portrait_hdpi
+TW_EXTRA_LANGUAGES := true
+TW_SCREEN_BLANK_ON_BOOT := true
+TW_INPUT_BLACKLIST := "hbtp_vm"
+TW_USE_TOOLBOX := true
+TW_INCLUDE_REPACKTOOLS := true
