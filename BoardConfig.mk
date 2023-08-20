@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/hmd/SCW_sprout
+DEVICE_PATH := device/hmd/SCWsprout
 
 # A/B
 AB_OTA_UPDATER := true
@@ -46,8 +46,8 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := SCW_sprout_defconfig
-TARGET_KERNEL_SOURCE := kernel/hmd/SCW_sprout
+TARGET_KERNEL_CONFIG := SCWsprout_defconfig
+TARGET_KERNEL_SOURCE := kernel/hmd/SCWsprout
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true # made it false to allow custom kernel
@@ -97,7 +97,7 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
-# include vendor/hmd/SCW_sprout/BoardConfigVendor.mk
+# include vendor/hmd/SCWsprout/BoardConfigVendor.mk
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
