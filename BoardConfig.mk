@@ -50,7 +50,7 @@ TARGET_KERNEL_CONFIG := SCW_sprout_defconfig
 TARGET_KERNEL_SOURCE := kernel/hmd/SCW_sprout
 
 # Kernel - prebuilt
-TARGET_FORCE_PREBUILT_KERNEL := true # made it false to allow custom kernel
+TARGET_FORCE_PREBUILT_KERNEL := false # made it false to allow custom kernel
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
