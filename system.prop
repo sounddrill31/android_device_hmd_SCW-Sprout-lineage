@@ -1,5 +1,5 @@
 ro.product.vendor.marketname=Nokia X10
-ro.product.board=SCW_sprout
+ro.product.board=scarlett
 ro.board.platform=holi
 sys.usb.controller=a600000.dwc3
 sys.usb.rndis.func.name=rndis_bam
