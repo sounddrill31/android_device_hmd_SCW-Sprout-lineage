@@ -1,4 +1,4 @@
-ro.product.vendor.marketname=SCW_sprout
+ro.product.vendor.marketname=Nokia X10
 ro.product.board=SCW_sprout
 ro.board.platform=msmnile
 sys.usb.controller=a600000.dwc3
