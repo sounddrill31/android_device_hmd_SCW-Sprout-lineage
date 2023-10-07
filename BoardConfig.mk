@@ -50,7 +50,7 @@ TARGET_KERNEL_CONFIG := SCW_sprout_defconfig
 TARGET_KERNEL_SOURCE := kernel/hmd/SCW_sprout
 
 # Kernel - prebuilt
-TARGET_FORCE_PREBUILT_KERNEL := false # made it false to allow custom kernel
+TARGET_FORCE_PREBUILT_KERNEL := true # made it false to allow custom kernel
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
@@ -75,10 +75,10 @@ TARGET_BOARD_PLATFORM := holi
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
-TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+#TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+#TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+#TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
+#TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.emmc
@@ -97,4 +97,4 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
-include vendor/hmd/SCW_sprout/BoardConfigVendor.mk
+# include vendor/hmd/SCW_sprout/BoardConfigVendor.mk
