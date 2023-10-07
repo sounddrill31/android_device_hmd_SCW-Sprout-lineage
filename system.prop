@@ -1,6 +1,6 @@
 ro.product.vendor.marketname=Nokia X10
 ro.product.board=SCW_sprout
-ro.board.platform=msmnile
+ro.board.platform=holi
 sys.usb.controller=a600000.dwc3
 sys.usb.rndis.func.name=rndis_bam
 sys.usb.rmnet.func.name=rmnet_bam
